@@ -1,0 +1,15 @@
+{
+  "name": "com.intelliorigins.shaderfarm",
+  "version": "0.2.0",
+  "license": "Apache-2.0",
+  "displayName": "ShaderFarm",
+  "description": "Distributed Shader compilation, cache validation and statistics for Unity YooAsset/SBP builds.",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.tuyoogame.yooasset": "2.3.19"
+  },
+  "author": { "name": "ShaderFarm contributors", "url": "https://github.com/h34tn/shaderfarm-unity" },
+  "repository": { "type": "git", "url": "https://github.com/h34tn/shaderfarm-unity.git" },
+  "files": ["Editor", "Tests", "*.md", "*.meta"],
+  "keywords": ["shader", "build", "distributed", "yooasset"]
+}

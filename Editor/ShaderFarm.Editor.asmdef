@@ -1,0 +1,7 @@
+{
+  "name": "ShaderFarm.Editor",
+  "rootNamespace": "ShaderFarm.Editor",
+  "references": ["YooAsset", "YooAsset.Editor"],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": true
+}
