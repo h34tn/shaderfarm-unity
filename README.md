@@ -55,7 +55,7 @@ Master 的“项目接入 → 启用/停用”写入工程本地 `Build/ShaderDi
 
 ## 源码与验证
 
-本公开仓库保存由 ShaderFarm 主仓导出的发布快照。实现统一在主仓的 `Packages/com.intelliorigins.shaderfarm` 维护，发布时同步；公开仓库的修改建议通过 Issue 或 PR 提交，由维护者合入主仓后导出。升级通过 UPM 完成；Master 不复制、安装或覆盖 `Assets` 中的 C# 文件。旧的 Assets 适配器须先移除，避免同时加载两套 Shader 回调。
+本公开仓库是 Unity 包源码的唯一维护仓库，修改直接通过本仓库的 Issue 或 PR 协作。ShaderFarm 桌面端主仓通过 Git submodule 固定引用本仓库的已发布提交，不再维护或导出包源码副本。升级通过 UPM 完成；Master 不复制、安装或覆盖 `Assets` 中的 C# 文件。旧的 Assets 适配器须先移除，避免同时加载两套 Shader 回调。
 
 程序集需要 YooAsset 与 SBP 构建环境。Unity Test Framework 测试位于 `Tests/Editor`，在工程 manifest 的 `testables` 中加入 `com.intelliorigins.shaderfarm` 后可运行。完整双节点冷编译、结果导入与新 Unity 进程缓存复用验收由维护者在主仓执行。
 
